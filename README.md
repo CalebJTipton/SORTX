@@ -1,7 +1,7 @@
 # SORTX
 for data hoarders | by data hoarders
 
-![SORTX LOGO](src/images/sortx_logo.gif)
+![SORTX LOGO](src/images/sortx_logo.png)
 
 ## Project Description
    A powerful yet intuitve data-oriented windows utility to efficiently sort multiple types of data by deeply customizable user-defined perameters.
