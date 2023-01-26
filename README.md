@@ -13,5 +13,5 @@ ____________________________________________________________
 ### Backend: "C#"
 
 ## Core Team
-### Caleb Tipton | Project Founder and Lead | Full Stack Developer
+### Caleb Tipton | Project Founder | Lead Full Stack Developer
 
