@@ -1,16 +1,17 @@
 # SORTX
 for data hoarders | by data hoarders
 
-# Project Details
-Description | A powerful yet intuitve data-oriented windows utility to efficiently  
-              sort multiple types of data by deeply customizable user-defined perameters.
+![SORTX LOGO](src/images/sortx_logo.gif)
 
-# Project Decisions 
-Versioning | "Semantic numbering"
-License    | "GNU General Public License"
-Frontend   | "Microsoft Forms"
-Backend    | "C#"
+## Project Description
+   A powerful yet intuitve data-oriented windows utility to efficiently sort multiple types of data by deeply customizable user-defined perameters.
 
-# Core Team
-Caleb Tipton | Project Founder and Lead | Full Stack Developer
+## Project Decisions 
+### Versioning: "Semantic numbering"
+### License: "GNU General Public License"
+### Frontend: "Microsoft Forms"
+### Backend: "C#"
+
+## Core Team
+### Caleb Tipton | Project Founder and Lead | Full Stack Developer
 
