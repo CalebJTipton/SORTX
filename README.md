@@ -6,10 +6,10 @@ Description | A powerful yet intuitve data-oriented windows utility to efficient
               sort multiple types of data by deeply customizable user-defined perameters.
 
 # Project Decisions 
-Versioning | Semantic numbering
-License    | GNU General Public License
-Backend    | C#
-Frontend   | Microsoft Forms
+Versioning | "Semantic numbering"
+License    | "GNU General Public License"
+Frontend   | "Microsoft Forms"
+Backend    | "C#"
 
 # Core Team
 Caleb Tipton | Project Founder and Lead | Full Stack Developer
