@@ -11,6 +11,6 @@ License    | GNU General Public License
 Backend    | C#
 Frontend   | Microsoft Forms
 
-Core Team
+# Core Team
 Caleb Tipton | Project Founder and Lead | Full Stack Developer
 
