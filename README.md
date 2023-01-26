@@ -5,12 +5,12 @@ for data hoarders | by data hoarders
 Description | A powerful yet intuitve data-oriented windows utility to efficiently  
               sort multiple types of data by deeply customizable user-defined perameters.
 
-#Project Decisions 
+Project Decisions 
 Versioning | Semantic numbering
 License    | GNU General Public License
 Backend    | C#
 Frontend   | Microsoft Forms
 
-#Core Team
+Core Team
 Caleb Tipton | Project Founder and Lead | Full Stack Developer
 
