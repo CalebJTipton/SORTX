@@ -1,6 +1,7 @@
 ![SORTX LOGO](src/images/sortx_logo.png)
 
 for data hoarders | by data hoarders
+
 https://sortx.dev/
 ____________________________________________________________
 
