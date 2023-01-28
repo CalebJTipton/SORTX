@@ -7,13 +7,28 @@ namespace SORTX
             InitializeComponent();
         }
 
-        String directoryPath;
+        String sourceDirectoryPath;
+        String outputDirectoryPath;
         private void browseDirectory_btn_Click(object sender, EventArgs e)
         {
             if(folderBrowserDialog1.ShowDialog() == DialogResult.OK)
             {
-                directoryPath = folderBrowserDialog1.SelectedPath; //updates the directoryPath variable with dialog selection
-                directoryPath_txt.Text = directoryPath; //updates the directoryPath textbok with the new dialog selection
+                sourceDirectoryPath = folderBrowserDialog1.SelectedPath; //updates the sourceDirectoryPath variable with dialog selection
+                sourceDirectoryPath_txt.Text = sourceDirectoryPath; //updates the sourceDirectoryPath textbok with the new dialog selection
+            }
+        }
+
+        private void sortDirectory_lbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void outputDirectoryBrowse_btn_Click(object sender, EventArgs e)
+        {
+            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+            {
+                outputDirectoryPath = folderBrowserDialog1.SelectedPath; //updates the sourceDirectoryPath variable with dialog selection
+                outputDirectoryPath_txt.Text = outputDirectoryPath; //updates the sourceDirectoryPath textbok with the new dialog selection
             }
         }
     }
