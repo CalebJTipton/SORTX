@@ -31,5 +31,10 @@ namespace SORTX
                 outputDirectoryPath_txt.Text = outputDirectoryPath; //updates the sourceDirectoryPath textbok with the new dialog selection
             }
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
