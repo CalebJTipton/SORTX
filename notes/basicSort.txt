@@ -1,0 +1,21 @@
+using System;
+using System.IO;
+using System.Linq;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        string path = "C:\\example\\"; // replace with the path of the directory you want to sort
+        var files = new DirectoryInfo(path).GetFiles();
+        var sortedFiles =
+            from file in files
+            orderby file.Extension
+            select file;
+
+        foreach (var file in sortedFiles)
+        {
+            Console.WriteLine("{0} ({1})", file.Name, file.Extension);
+        }
+    }
+}

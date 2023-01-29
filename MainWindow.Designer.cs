@@ -45,6 +45,8 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sort_btn = new System.Windows.Forms.Button();
+            this.consoleOutput_rtxt = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -188,15 +190,36 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // sort_btn
+            // 
+            this.sort_btn.Location = new System.Drawing.Point(251, 376);
+            this.sort_btn.Name = "sort_btn";
+            this.sort_btn.Size = new System.Drawing.Size(156, 23);
+            this.sort_btn.TabIndex = 14;
+            this.sort_btn.Text = "Sort!";
+            this.sort_btn.UseVisualStyleBackColor = true;
+            this.sort_btn.Click += new System.EventHandler(this.sort_btn_Click);
+            // 
+            // consoleOutput_rtxt
+            // 
+            this.consoleOutput_rtxt.Location = new System.Drawing.Point(68, 432);
+            this.consoleOutput_rtxt.Name = "consoleOutput_rtxt";
+            this.consoleOutput_rtxt.ReadOnly = true;
+            this.consoleOutput_rtxt.Size = new System.Drawing.Size(513, 96);
+            this.consoleOutput_rtxt.TabIndex = 15;
+            this.consoleOutput_rtxt.Text = "";
             // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(637, 571);
+            this.Controls.Add(this.consoleOutput_rtxt);
+            this.Controls.Add(this.sort_btn);
             this.Controls.Add(this.outputDirectory_lbl);
             this.Controls.Add(this.outputDirectoryPath_txt);
             this.Controls.Add(this.outputDirectoryBrowse_btn);
@@ -241,5 +264,7 @@
         private MenuStrip menuStrip1;
         private ToolStripMenuItem fileToolStripMenuItem;
         private ToolStripMenuItem exitToolStripMenuItem;
+        private Button sort_btn;
+        private RichTextBox consoleOutput_rtxt;
     }
 }

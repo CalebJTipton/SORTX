@@ -7,8 +7,25 @@ namespace SORTX
             InitializeComponent();
         }
 
-        String sourceDirectoryPath;
-        String outputDirectoryPath;
+        static String sourceDirectoryPath ="";
+        static String outputDirectoryPath ="";
+
+        private void sort()
+        {
+
+            consoleOutput_rtxt.Text = "Listing files by filetype in directory: " + sourceDirectoryPath; //clears previous console log
+
+            var files = new DirectoryInfo(sourceDirectoryPath).GetFiles();
+            var sortedFiles =
+                from file in files
+                orderby file.Extension
+                select file;
+
+            foreach (var file in sortedFiles)
+            {
+                consoleOutput_rtxt.Text = consoleOutput_rtxt.Text + "\n" + file.Name;
+            }
+        }
         private void browseDirectory_btn_Click(object sender, EventArgs e)
         {
             if(folderBrowserDialog1.ShowDialog() == DialogResult.OK)
@@ -35,6 +52,11 @@ namespace SORTX
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void sort_btn_Click(object sender, EventArgs e)
+        {
+            sort();
         }
     }
 }
