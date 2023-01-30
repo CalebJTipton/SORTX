@@ -18,4 +18,4 @@ ____________________________________________________________
 ### Caleb Tipton | Project Founder | Lead Full Stack Developer
 
 ## Releases
-### Windows 11 | Coming Soon!
+### V1.0 (Windows 10/11): Coming Soon!
