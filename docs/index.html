@@ -16,7 +16,14 @@
       .container {
         max-width: 800px;
         margin: 0 auto;
-        padding: 20px;
+        padding: 0px;
+      }
+
+      .logoContainer {
+        width: 200px;
+        height: 75px;
+        position: relative;
+        margin: 5px auto;
       }
       .btn {
         background-color: #4CAF50;
@@ -27,13 +34,78 @@
         margin-top: 20px;
         display: inline-block;
       }
+       /* Add the animation styles */
+       .text-appear {
+        animation: appear-animation 1s linear forwards;
+        opacity: 0;
+      }
+      @keyframes appear-animation {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      .letter {
+        display: inline-block;
+        animation: letter-animation .3s linear forwards;
+      }
+      @keyframes letter-animation {
+        0% {
+          transform: translateY(-100%);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+      .image {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+      
+      .show {
+        opacity: 1;
+      }
     </style>
   </head>
   <body>
+    <div class="logoContainer">
+    <img src="../src/images/sortx_logo.png" alt="SORTX" class="image">
+    </div>
     <div class="container">
-      <h1>SORTX</h1>
+        <h1 class="text-appear">
+            <span class="letter">for</span>
+            <span class="letter">data</span>
+            <span class="letter">hoarders. </span>
+            <span class="letter">by</span>
+            <span class="letter">data</span>
+            <span class="letter">hoarders.</span>
+          </h1>
+          <script>
+            // Add the class to the text when the page loads
+            document.addEventListener("DOMContentLoaded", function() {
+              document.querySelector("h1").classList.add("text-appear");
+              var letters = document.querySelectorAll(".letter");
+              for (var i = 0; i < letters.length; i++) {
+                letters[i].style.animationDelay = (i * 0.1) + "s";
+              }
+            });
+          </script>
+           <script>
+            const image = document.querySelector(".image");
+            
+            window.setTimeout(function() {
+              image.classList.add("show");
+            }, 1000);
+          </script>
       <p>A powerful yet intuitve data-oriented windows utility to efficiently sort multiple types of data by deeply customizable user-defined perameters.</p>
-      <a href="https://github.com/calebjtipton/sortx" class="btn">View on GitHub</a>
+      <a href="https://github.com/calebjtipton/sortx" class="btn">View project on GitHub</a>
     </div>
   </body>
 </html>
