@@ -20,8 +20,8 @@
       }
 
       .logoContainer {
-        width: 200px;
-        height: 75px;
+        width: 250px;
+        height: 100px;
         position: relative;
         margin: 5px auto;
       }
@@ -87,6 +87,13 @@
             <span class="letter">data</span>
             <span class="letter">hoarders.</span>
           </h1>
+           <script>
+            const image = document.querySelector(".image");
+            
+            window.setTimeout(function() {
+              image.classList.add("show");
+            }, 1000);
+          </script>
           <script>
             // Add the class to the text when the page loads
             document.addEventListener("DOMContentLoaded", function() {
@@ -96,13 +103,6 @@
                 letters[i].style.animationDelay = (i * 0.1) + "s";
               }
             });
-          </script>
-           <script>
-            const image = document.querySelector(".image");
-            
-            window.setTimeout(function() {
-              image.classList.add("show");
-            }, 1000);
           </script>
       <p>A powerful yet intuitve data-oriented windows utility to efficiently sort multiple types of data by deeply customizable user-defined perameters.</p>
       <a href="https://github.com/calebjtipton/sortx" class="btn">View project on GitHub</a>
